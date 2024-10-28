@@ -14,7 +14,7 @@ const ProductForm = () => {
       const response = await axios.get('http://localhost:5051/api/Product');
       setProducts(response.data);
     } catch (error) {
-      console.error('Error fetching pds', error);
+      console.error('Error fetching ', error);
     }
   };
 
